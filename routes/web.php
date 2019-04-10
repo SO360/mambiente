@@ -20,6 +20,11 @@ Route::get('/contenido/internacional/prensa', 'NatureController@showInternationa
 Route::get('/contacto', 'NatureController@contact')->name('contact');
 
 Route::get('/salaDePrensa/contenido/{id}', 'NatureController@contenido')->name('contenido');
+
+Route::get('/contenido/nacional/{id}', 'NatureController@contenido')->name('contenido.nacional');
+
+Route::get('/contenido/internacional/{id}', 'NatureController@contenido')->name('contenido.internacional');
+
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
 $this->post('login', 'Auth\LoginController@login')->name('auth.login');

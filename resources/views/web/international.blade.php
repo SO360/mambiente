@@ -33,7 +33,7 @@
 		                    $url2 = url($change);
 
 		                    if ($value->url_string == null) {
-		                       $hre = route('contenido', [$value->slug]);
+		                       $hre = route('contenido.internacional', [$value->slug]);
 
 		                    } else {
 		                        $hre = $value->url_string;
